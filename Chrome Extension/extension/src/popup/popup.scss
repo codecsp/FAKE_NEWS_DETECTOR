@@ -1,0 +1,41 @@
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.main-container {
+  min-width: 180px;
+}
+
+#snopes {
+  width: 60px;
+  height: 45px;
+}
+
+#snopes:hover {
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 8px #888888;
+  transition: all ease-in 0.3s;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-left {
+  text-align: left;
+}
+
+#pat {
+  width: 40px;
+  height: 40px;
+  transition: all ease-in 0.3s;
+}
+
+#pat:hover {
+  transform: translateY(-2px);
+  box-shadow: 10px 10px 8px #888888;
+}

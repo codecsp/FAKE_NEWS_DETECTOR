@@ -1,0 +1,106 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Fake news detctor</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" type="text/css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+  <link rel="stylesheet" href="popup.scss">
+</head>
+
+<body>
+
+<div class="container main-container">
+  <!--Header-->
+  <div class="row">
+    <div class="col align-center">
+      <h1>Fake news detector</h1>
+    </div>
+  </div>
+
+  <!--Chart-->
+  <div class="row">
+    <div class="col align-center">
+      <div class="chart"  data-scale-color="#ffb400"></div>
+      <p id="valuee" style="display:inline-block;margin-top: -60px;">90%</p>
+    </div>
+  </div>
+
+  <!--Trust Test-->
+  <div class="row">
+    <div class="col align-center"style="margin-right:10px">Trust Percentage</div>
+    <div id="trust"  style="font-size:10px; margin-left:20px; font:grey" >
+      High Score = More Trustworthy </div>
+  </div>
+
+
+</div>
+
+
+
+
+<script src="../../vendor/jquery/jquery-3.3.1.min.js"></script>
+<script src="../../vendor/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../../vendor/easypie/jquery.easypiechart.min.js"></script>
+<script src="popup.js"></script>
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+<!--&lt;!&ndash; Search Bar &ndash;&gt;-->
+<!--<div action="/action_page.php" method="post" class="search">-->
+  <!--<form action="/" id="body-search" class="searchField default-search page-search">-->
+    <!--<div class="material-input">-->
+      <!--<div class="material-input-wrapper">-->
+        <!--<input placeholder="Search Keywords or URLs" type="text" name="bodySearch" id="header-search" value="">-->
+      <!--</div>-->
+    <!--</div>-->
+    <!--<button type="submit" class="submit"><i class="fa fa-search"></i></button>-->
+  <!--</form>-->
+  <!--&lt;!&ndash; <a href="#" class="mobile-search-close" style="display: none"><i class="fa fa-close"></i></a> &ndash;&gt;-->
+<!--</div>-->
+
+<!--&lt;!&ndash; modal Icons(social media)&ndash;&gt;-->
+<!--<div class="modal-icons">-->
+  <!--<div class="flex-container">-->
+    <!--<div class="flex">-->
+      <!--<a href="https://www.csumb.edu" target="_blank">-->
+        <!--<i class="fa fa-globe"></i>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--<div class="flex">-->
+      <!--<a href="https://www.csumb.edu" target="_blank">-->
+        <!--<i class="fa fa-facebook"></i>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--<div class="flex">-->
+      <!--<a href="https://www.csumb.edu" target="_blank">-->
+        <!--<i class="fa fa-twitter"></i>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--<div class="flex">-->
+      <!--<a href="https://www.csumb.edu" target="_blank">-->
+        <!--<i class="fa fa-instagram"></i>-->
+      <!--</a>-->
+    <!--</div>-->
+    <!--<div class="flex">-->
+      <!--<a href="https://www.csumb.edu" target="_blank">-->
+        <!--<i class="fa fa-globe"></i>-->
+      <!--</a>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

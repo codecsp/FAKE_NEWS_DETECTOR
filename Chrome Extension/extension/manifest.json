@@ -1,0 +1,50 @@
+{
+  "name": "FAKE NEWS DETECTOR ",
+  "version": "1.0",
+  "description": "Can you trust this news source?",
+  "manifest_version": 2,
+  "icons": {
+    "16": "/resources/images/icon_16.png",
+    "32": "/resources/images/icon_32.png",
+    "48": "/resources/images/icon_48.png",
+    "128": "/resources/images/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "/src/content.js",
+        "/vendor/jquery/jquery-3.3.1.min.js",
+        "/vendor/bootstrap/bootstrap.min.js",
+        "/vendor/easypie/jquery.easypiechart.min.js",
+        "/src/popup/popup.js"
+      ],
+      "css": [
+        "vendor/bootstrap/bootstrap.min.css",
+        "vendor/animate/animate.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "/vendor/jquery/jquery-3.3.1.min.js",
+      "src/background.js"
+    ],
+    "persistent": false
+  },
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "permissions": [
+    "https://raw.githubusercontent.com/BigMcLargeHuge/opensources/master/sources/sources.json",
+    "activeTab",
+    "declarativeContent",
+    "storage",
+    "http://127.0.0.1:3000/"
+  ],
+  "browser_action": {
+    "default_icon": "resources/images/icon.png",
+    "default_popup": "src/popup/popup.html"
+  },
+  "web_accessible_resources": [ "https://www.patreon.com/user?u=14707516" ]
+}
